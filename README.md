@@ -24,5 +24,5 @@ Here is an overview of what you will find in this repository:
 - Solving logic building and mathematical problems.
 
 ## 📫 Let's Connect
-* *Name:* Ali
+* *Name:* Md Rehan Ali
 * *GitHub:* [@rehanhub78](https://github.com/rehanhub78)
