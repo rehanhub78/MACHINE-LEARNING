@@ -10,6 +10,6 @@ for i in range(1,501):
             temp = temp //10
         
         if i == reverse:
-            print(i)
+            print(i, end=" ")
             
-    
+print()
