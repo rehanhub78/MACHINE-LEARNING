@@ -8,5 +8,3 @@ for i in range(1,101):
         total += j
     if total % 2 ==0:
         print(i)
-    else:
-        continue
