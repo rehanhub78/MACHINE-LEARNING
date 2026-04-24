@@ -2,11 +2,10 @@
 Find nCr (Combination formula) recursively using Pascal's relation.
 '''
 def nCr(n,r):
-    if r==0:
-        n=1
-        return n
+    if r==0 or n == r:
+        return 1
     else:
-        return (n/r)*nCr(n-1,r-1)
+        return nCr(n-1,r-1) + nCr(n-1,r)
     
 try:
     num = int(input("Enter Total number of items: "))
