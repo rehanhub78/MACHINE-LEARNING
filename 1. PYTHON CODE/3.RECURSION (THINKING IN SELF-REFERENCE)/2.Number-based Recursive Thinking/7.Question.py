@@ -1,12 +1,12 @@
 '''
 Print digits of a number in words recursively (e.g., 123 → “one two three”).
 '''
+NAMES = ["zero","One","Two","Theree","Four","Five","Six","Seven","Eight","Nine"]
 def digits_name(n):
-    name = ["zero","One","Two","Theree","Four","Five","Six","Seven","Eight","Nine"]
     if n < 10:
-        return name[n]
+        return NAMES[n]
     else:
-        return digits_name(n // 10) + " " + name[n % 10]
+        return digits_name(n // 10) + " " + NAMES[n % 10]
 try:
     num = int(input("Enter your number: "))
 except ValueError:
