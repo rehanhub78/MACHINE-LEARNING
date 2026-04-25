@@ -13,6 +13,6 @@ except ValueError:
     print("Invalid! Please enter numeric digit.")
     exit()
 if num <=0:
-    print("Invalid! Please enter correct number of stars.")
+    print("Invalid! Please enter positive number of rows.")
 else:
     num_pattern(num)

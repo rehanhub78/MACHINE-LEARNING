@@ -9,7 +9,7 @@ try:
     row_num = int(input("Enter number of rows: "))
     column_num = int(input("Enter number of columns: "))
 except ValueError:
-    print("Invalid! Please enter numeric digit.")
+    print("Invalid! Please enter numeric digits.")
     exit()
 if row_num <=0 or column_num <= 0:
     print("Invalid! Please enter correct number of stars.")

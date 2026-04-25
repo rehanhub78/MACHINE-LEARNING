@@ -15,3 +15,4 @@ if num <=0:
     print("Invalid! Please enter correct number of stars.")
 else:
     star_print(num)
+print()

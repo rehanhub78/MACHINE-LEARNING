@@ -1,10 +1,10 @@
 '''
 Print a triangle of stars recursively (top-down).
 '''
-def top_down_star(n,new_n=1):
+def top_down_star(n):
     if n > 0:
-        print("*"*new_n)
-        top_down_star(n-1,new_n+1)
+        top_down_star(n-1)
+        print("*"*n)
 try:
     num = int(input("Enter number of rows: "))
 except ValueError:
