@@ -1,7 +1,6 @@
 '''
 Remove all spaces from a string recursively.
 '''
-space = " "
 def remove_space(s, i=0):
     if i >= len(s):
         return ""
