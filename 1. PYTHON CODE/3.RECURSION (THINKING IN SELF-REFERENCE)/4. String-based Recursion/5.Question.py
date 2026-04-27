@@ -9,4 +9,4 @@ def replace_occurance(s,i=0):
     return s[i] + replace_occurance(s, i + 1)
 
 ch = str(input("Enter your string: "))
-print(f"String after witout space is: {replace_occurance(ch.lower())} ")
+print(f"String after replacement of a  → x is: {replace_occurance(ch.lower())} ")
