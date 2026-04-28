@@ -5,7 +5,12 @@ def upper_case(s,i=0):
     if i < len(s):
         print(s[i].upper(), end="")
         upper_case(s,i+1)
-
+# second method
+def upper_case2(s,i=0):
+    if i >= len(s):
+        return ""
+    else:
+        return s[i].upper() + upper_case2(s,i+1)
 ch = str(input("Enter your string: "))
-print(f"The String in uppercase is:")
+print(f"The String in uppercase is: {upper_case2(ch)}")
 upper_case(ch)
