@@ -1,5 +1,5 @@
 '''
-Count how many times a given element appears.
+Find the sum of even and odd elements only.
 '''
 n = int(input("Enter how many numbers you want to store in the array: "))
 if n <= 0:
@@ -13,13 +13,15 @@ while len(my_array) < n:
         my_array.append(num)
     except ValueError:
         print("Invalid! Please enter numeric digit.")
-try:
-    b = int(input("Enter your number: "))
-except ValueError:
-        print("Invalid! Please enter numeric digit.")
-        exit()
-num_count = 0
+        
+sum_even = 0
+sum_odd = 0
 for i in my_array:
-    if i == b:
-        num_count += 1
-print(f"Number {b} appears {num_count} times in array")
+    if i % 2 == 0:
+        sum_even += i
+    else:
+        sum_odd += i
+
+print(f"Sum of even elements: {sum_even}")
+print(f"Sum of odd elements: {sum_odd}")
+   

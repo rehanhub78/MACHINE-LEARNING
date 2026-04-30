@@ -1,5 +1,5 @@
 '''
-Count how many times a given element appears.
+Find the first occurrence of a given number.
 '''
 n = int(input("Enter how many numbers you want to store in the array: "))
 if n <= 0:
@@ -18,8 +18,8 @@ try:
 except ValueError:
         print("Invalid! Please enter numeric digit.")
         exit()
-num_count = 0
-for i in my_array:
-    if i == b:
-        num_count += 1
-print(f"Number {b} appears {num_count} times in array")
+if b not in my_array:
+    print(f"Number {b} does not exist in array.")
+else:
+    print(f"Number {b} first occurs on index {my_array.index(b)}")
+    

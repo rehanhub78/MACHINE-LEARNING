@@ -1,5 +1,5 @@
 '''
-Count how many times a given element appears.
+Check if all elements in an array are unique.
 '''
 n = int(input("Enter how many numbers you want to store in the array: "))
 if n <= 0:
@@ -13,13 +13,12 @@ while len(my_array) < n:
         my_array.append(num)
     except ValueError:
         print("Invalid! Please enter numeric digit.")
-try:
-    b = int(input("Enter your number: "))
-except ValueError:
-        print("Invalid! Please enter numeric digit.")
-        exit()
-num_count = 0
+        
+new_array = []
 for i in my_array:
-    if i == b:
-        num_count += 1
-print(f"Number {b} appears {num_count} times in array")
+    if i not in new_array:
+        new_array.append(i)
+if my_array == new_array:
+    print("Array is unique.")
+else:
+    print("Array is not unique.")    

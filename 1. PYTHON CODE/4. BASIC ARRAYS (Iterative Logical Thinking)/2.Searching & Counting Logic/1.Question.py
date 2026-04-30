@@ -6,6 +6,7 @@ try:
     num = int(input(f"Enter your number: "))
 except ValueError:
     print("Invalid! Please enter numeric digit.")
+    exit()
 if num in my_array:
     print(f"Yes! {num} is blongs in array.")
 else:
