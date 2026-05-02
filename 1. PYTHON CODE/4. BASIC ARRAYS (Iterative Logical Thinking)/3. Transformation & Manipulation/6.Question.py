@@ -14,7 +14,6 @@ while len(my_array) < n:
     except ValueError:
         print("Invalid! Please enter numeric digit.")
 new_array = []
-for i in range(-1,-len(my_array)-1,-1):
+for i in range(len(my_array)-1,-1,-1):
     new_array.append(my_array[i])
-
 print(f"Reverse array is: {new_array}")
