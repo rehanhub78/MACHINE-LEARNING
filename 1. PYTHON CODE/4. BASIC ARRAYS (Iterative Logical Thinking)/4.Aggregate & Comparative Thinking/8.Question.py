@@ -18,7 +18,6 @@ for num in array:
         frequency[num] += 1
     else:
         frequency[num] = 1
-print(frequency)
 print("Frequency of each number:")
 for num, count in frequency.items():
     print(f"{num}: {count}")
