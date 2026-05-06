@@ -15,10 +15,15 @@ while len(array) < n:
 if n == 1:
     print("There is no second smallest element in the array.")
 else:
-    sorted_array = []
-    array1 = array.copy()
-    while len(array1) > 0:
-        i = min(array1)
-        sorted_array.append(i)
-        array1.remove(i)
-    print(f"The second smallest element in the array is: {sorted_array[1]}")
+    smallest = float('inf')
+    second_smallest = float('inf')
+    for i in array:
+        if i < smallest:
+            second_smallest = smallest
+            smallest = i
+        elif i < second_smallest and i != smallest:
+            second_smallest = i
+    if second_smallest == float('inf'):
+        print("There is no second smallest element in the array.")
+    else:
+        print(f"The second smallest element in the array is: {second_smallest}")

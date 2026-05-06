@@ -15,4 +15,12 @@ while len(array) < n:
 if n == 1:
     print("There is only one element in the array.")
 else:
-    print(f"The difference between the largest and smallest element in the array is: {max(array) - min(array)}")
+    largest = float('-inf')
+    smallest = float('inf')
+    for i in array:
+        if i > largest:
+            largest = i
+        if i < smallest:
+            smallest = i
+    difference = largest - smallest
+    print(f"The difference between the largest and smallest element is: {difference}")
