@@ -23,5 +23,8 @@ else:
         i = min(array1)
         sorted_array.append(i)
         array1.remove(i)
-    sum_of_elements = sum(sorted_array[1:-1])
+    sum_of_elements = 0
+    for i in range(1, n - 1):
+        sum_of_elements += sorted_array[i]
     print(f"The sum of all elements except the largest and smallest is: {sum_of_elements}")
+    
