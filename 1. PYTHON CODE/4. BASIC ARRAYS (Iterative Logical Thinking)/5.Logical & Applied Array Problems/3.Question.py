@@ -15,10 +15,15 @@ while len(array) < n:
 if n == 1:
     print("There is no second largest element in the array.")
 else:
-    sorted_array = []
-    array1 = array.copy()
-    while len(array1) > 0:
-        i = max(array1)
-        sorted_array.append(i)
-        array1.remove(i)
-    print(f"The second largest element in the array is: {sorted_array[1]}")
+    largest = float('-inf')
+    second_largest = float('-inf')
+    for i in array:
+        if i > largest:
+            second_largest = largest
+            largest = i
+        elif i > second_largest and i != largest:
+            second_largest = i
+    if second_largest == float('-inf'):
+        print("There is no second largest element in the array.")
+    else:
+        print(f"The second largest element in the array is: {second_largest}")

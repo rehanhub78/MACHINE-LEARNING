@@ -12,13 +12,11 @@ while len(array) < n:
         array.append(num)
     except ValueError:
         print("Invalid! Please enter numeric digit.")
-sorted_array = []
-array1 = array.copy()
-while len(array1) > 0:
-    i = min(array1)
-    sorted_array.append(i)
-    array1.remove(i)
-if array == sorted_array:
+for i in range(len(array) - 1):
+    if array[i] > array[i + 1]:
+        is_sorted = False
+        break
+if is_sorted:
     print("The array is sorted in ascending order.")
 else:
     print("The array is not sorted in ascending order.")
