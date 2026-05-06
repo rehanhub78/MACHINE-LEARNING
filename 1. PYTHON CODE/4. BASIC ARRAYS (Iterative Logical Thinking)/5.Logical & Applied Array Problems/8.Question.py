@@ -15,13 +15,9 @@ while len(array) < n:
 if n == 1:
     print("There is only one element in the array.")
 else:
-    sum = 0
-    for i in array:
-        sum += i
-    average = sum / n
+    average = sum(array) / n
     count = 0
-    for i in range(n):
-        if array[i] > average:
+    for i in array:
+        if i > average:
             count += 1
     print(f"The number of elements greater than the average is: {count}")
-    

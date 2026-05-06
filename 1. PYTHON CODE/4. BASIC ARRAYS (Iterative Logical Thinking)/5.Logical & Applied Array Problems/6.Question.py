@@ -17,14 +17,13 @@ if n == 1:
 elif n == 2:
     print("There are only two elements in the array.")
 else:
-    sorted_array = []
-    array1 = array.copy()
-    while len(array1) > 0:
-        i = min(array1)
-        sorted_array.append(i)
-        array1.remove(i)
-    sum_of_elements = 0
-    for i in range(1, n - 1):
-        sum_of_elements += sorted_array[i]
-    print(f"The sum of all elements except the largest and smallest is: {sum_of_elements}")
-    
+    largest = float('-inf')
+    smallest = float('inf')
+    for i in array:
+        if i > largest:
+            largest = i
+        if i < smallest:
+            smallest = i
+    filter = [x for x in array if x != largest and x!= smallest]
+    result = sum(filter)
+    print(f"The sum of all elements except the largest and smallest is: {result}")
