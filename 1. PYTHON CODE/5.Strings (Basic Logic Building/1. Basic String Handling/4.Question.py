@@ -12,3 +12,4 @@ if input_string:
     print("The string in lowercase is:", manual_lower)
 else:
     print("The string is empty.")
+    
