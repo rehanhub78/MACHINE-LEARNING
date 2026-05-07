@@ -10,3 +10,4 @@ if input_string:
     print("The number of characters (excluding spaces) is:", char_count)
 else:
     print("The string is empty.")
+    
