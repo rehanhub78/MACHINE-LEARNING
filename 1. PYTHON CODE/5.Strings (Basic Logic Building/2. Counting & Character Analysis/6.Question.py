@@ -10,3 +10,4 @@ def count_character(string, character):
 string = input("Enter a string: ")
 character = input("Enter a character to count: ")  
 occurrences = count_character(string, character)
+print(f"The character '{character}' appears {occurrences} times in the string.")
